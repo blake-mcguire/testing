@@ -55,7 +55,5 @@ jobs:
           python -m pip install -r requirements.txt
       
       - name: Run the tests
-        run: |
-          source venv/bin/activate
-          python -m unittest discover -v -s . -p "add_test.py"
+        run: python -m unittest discover -s -p "*_test.py"
           
