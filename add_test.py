@@ -1,6 +1,7 @@
 import unittest
 from app import app
 from faker import Faker
+import this
 
 
 class TestAddEndpoint(unittest.TestCase):
@@ -36,5 +37,6 @@ class TestAddEndpoint(unittest.TestCase):
         data = response.get_json()
         self.assertEqual(data['error'], 'Bad data, values must be int or float')
 
+print(this)
 if __name__ == '__main__':
     unittest.main()
